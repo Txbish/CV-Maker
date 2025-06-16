@@ -1,0 +1,390 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Form Container */
+.all-forms {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+/* Form Styling */
+.form {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 0.2s ease;
+}
+
+.form:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-head {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #4299e1;
+  padding-bottom: 0.5rem;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-field label {
+  font-weight: 500;
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  background-color: #fafafa;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #4299e1;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.form-field textarea {
+  min-height: 100px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #a0aec0;
+}
+
+/* Button Styling */
+.btn-container {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Primary buttons */
+.edu-btn,
+button:first-child {
+  background-color: #4299e1;
+  color: white;
+}
+
+.edu-btn:hover,
+button:first-child:hover {
+  background-color: #3182ce;
+}
+
+/* Secondary buttons */
+button:last-child {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+button:last-child:hover {
+  background-color: #cbd5e0;
+}
+
+/* Delete button */
+button:contains("Delete") {
+  background-color: #e53e3e;
+  color: white;
+}
+
+button:contains("Delete"):hover {
+  background-color: #c53030;
+}
+
+/* Education/Experience Lists */
+.education-list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.education-item-list,
+.experience-item-list {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.education-item-list:hover,
+.experience-item-list:hover {
+  background-color: #edf2f7;
+  border-color: #cbd5e0;
+  transform: translateX(4px);
+}
+
+.education-add {
+  margin-top: 1rem;
+}
+
+/* CV Preview Section */
+.live-preview {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  border: 1px solid #e2e8f0;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  position: sticky;
+  top: 2rem;
+}
+
+.cv {
+  padding: 2rem;
+  max-width: 100%;
+  background: white;
+  min-height: 100%;
+}
+
+/* CV Header */
+.cv-head {
+  border-bottom: 3px solid #4299e1;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.user-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.cv-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cv-bar p {
+  color: #4a5568;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem;
+  background-color: #f7fafc;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+}
+
+/* CV Sections */
+.cv-section {
+  margin-bottom: 2rem;
+}
+
+.cv-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  border-bottom: 2px solid #4299e1;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cv-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #4299e1;
+}
+
+.cv-item-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+.cv-item-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+}
+
+.cv-item-date {
+  font-size: 0.9rem;
+  color: #718096;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.cv-item-description {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.cv-empty {
+  text-align: center;
+  color: #a0aec0;
+  font-style: italic;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .live-preview {
+    position: static;
+    max-height: none;
+  }
+
+  .cv-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .user-name {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+
+  .form,
+  .cv {
+    padding: 1rem;
+  }
+
+  .user-name {
+    font-size: 1.75rem;
+  }
+
+  .cv-bar {
+    gap: 0.5rem;
+  }
+
+  .cv-bar p {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-name {
+    font-size: 1.5rem;
+  }
+
+  .cv-section-title {
+    font-size: 1.25rem;
+  }
+
+  .cv-item-title {
+    font-size: 1rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+  }
+
+  .all-forms {
+    display: none;
+  }
+
+  .live-preview {
+    box-shadow: none;
+    border: none;
+    max-height: none;
+  }
+
+  .cv {
+    padding: 1rem;
+  }
+
+  .cv-head {
+    border-bottom: 2px solid #000;
+  }
+
+  .cv-section-title {
+    border-bottom: 1px solid #000;
+  }
+
+  .cv-item {
+    background-color: transparent;
+    border-left: 2px solid #000;
+  }
+}
