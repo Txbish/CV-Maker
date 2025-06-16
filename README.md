@@ -2,6 +2,8 @@
 
 A modern, responsive CV/Resume builder application built with React. Create professional CVs by filling out intuitive forms and see a live preview as you type.
 
+**🔗 [Live Demo](https://cv-maker-six-weld.vercel.app/)**
+
 ![CV Application](https://img.shields.io/badge/React-18.x-blue)
 ![CSS3](https://img.shields.io/badge/CSS3-Responsive-green)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
