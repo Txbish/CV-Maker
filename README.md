@@ -79,7 +79,7 @@ CV-Application/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/txbish/cv-application.git
+   git clone https://github.com/txbish/CV-Maker.git
    cd cv-application
    ```
 
@@ -172,7 +172,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Tabish Noman Khan - txbishkhxn@gmail.com
 
-Project Link: [https://github.com/txbish/cv-application](https://github.com/txbish/cv-application)
+Project Link: [https://github.com/txbish/CV-Maker](https://github.com/txbish/CV-Maker)
 
 ---
 
